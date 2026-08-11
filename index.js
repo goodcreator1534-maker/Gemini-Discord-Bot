@@ -69,8 +69,6 @@ const config = Object.freeze({
 export default config;
 `;
 
-export default config;
-
 if (!fs.existsSync(configPath)) {
     console.log('config.js not found. Creating default configuration...');
     fs.writeFileSync(configPath, defaultConfig);
